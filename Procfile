@@ -1,1 +1,1 @@
-web: gunicorn trh_project:run
+web: gunicorn Trh_project:run
