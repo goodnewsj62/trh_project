@@ -1,0 +1,1 @@
+web: gunicorn trh_project:run

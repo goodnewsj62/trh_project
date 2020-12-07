@@ -4,7 +4,7 @@ from trh_app.model import Records, Admin
 from trh_app import db, login_manager, bcrypt_
 from flask_login import login_required, login_user, logout_user, current_user
 from functools import wraps
-import pandas as pd
+
 
 
 auth = Blueprint('auth', __name__)
