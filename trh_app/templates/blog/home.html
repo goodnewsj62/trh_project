@@ -1,0 +1,16 @@
+{% extends 'base.html'%} {% block title %}
+<title>Gratitude concert home</title> {% endblock%} {% block style %}
+<link rel="stylesheet" href="{{url_for('static', filename = './home.css')}}"> {% endblock %} {% block content%}
+<section>
+    <div class="cover">
+        <h2>Gratitude Concert 2020</h2>
+        <p>This is an indoor concert by the reinvention house to end the year in praise. To resevere a seat click the button below.
+        </p>
+        <h4>Only non church workers are allowed to register</h4>
+        <span>
+            <a href="{{url_for('blog.register')}}">Register Now</a>
+        </span>
+    </div>
+
+</section>
+{% endblock %}

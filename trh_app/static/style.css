@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url('./image/pexels-laura-stanley-2147029.jpg') center/cover no-repeat;
+}
+
+header {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+header img {
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+header span {
+    display: inline-flex;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    padding-bottom: 4px;
+}
+
+header span a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header span a:hover {
+    color: rgb(223, 86, 33);
+}
+
+.message {
+    color: #fff;
+    min-height: 2.5rem;
+    background-color: #0c630c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+    header {
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header {
+        padding: 0 4.5rem;
+    }
+    header img {
+        width: 70px;
+        height: 70px;
+    }
+    header span {
+        margin-right: 15px;
+        padding-top: 2px;
+    }
+}

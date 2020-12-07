@@ -1,0 +1,91 @@
+section {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form h3 {
+    color: rgb(223, 86, 33);
+    align-self: center;
+}
+
+form {
+    min-height: 30vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.auth-div {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.field-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: rgb(223, 86, 33);
+}
+
+.field {
+    height: 1.5rem;
+    padding: 7px;
+    outline-color: #1e90ff;
+}
+
+.submit {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 7px 15px;
+    color: #fff;
+    background-color: #1e90ff;
+    border-radius: 5px;
+}
+
+@media screen and (min-width:700px) {
+    form {
+        min-height: 45vh;
+        width: 50vw;
+    }
+    .field {
+        height: 1.8rem;
+        width: 85%;
+        align-self: center;
+    }
+    .field-label {
+        padding: 0px 19px;
+        margin-bottom: 15px;
+    }
+    .btn {
+        padding: 10px 25px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    form {
+        width: 30vw;
+    }
+}

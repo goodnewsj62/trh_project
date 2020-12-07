@@ -1,0 +1,32 @@
+{% extends 'base.html'%} {% block title %}
+<title>Gratitude concert admin</title> {% endblock%} {% block style %}
+<link rel="stylesheet" href="{{url_for('static', filename = './admin.css')}}"> {% endblock %} {% block content%}
+<section>
+    <h3>number of people registered: {{count}}</h3>
+    <div class="file">
+        <div class="row head">
+            <span>id</span>
+            <span>name</span>
+            <span>sex</span>
+            <span>status</span>
+            <span>phone</span>
+            <span>day</span>
+            <span>seat</span>
+        </div>
+        {% for row in file%}
+        <div class="row">
+            <span>{{row.id}}</span>
+            <span>{{row.name}}</span>
+            <span>{{row.sex}}</span>
+            <span>{{row.status}}</span>
+            <span>{{row.phone}}</span>
+            <span>{{row.day}}</span>
+            <span>{{row.seat}}</span>
+        </div>
+        {% endfor %}
+
+
+    </div>
+
+</section>
+{% endblock %}

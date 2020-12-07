@@ -1,0 +1,70 @@
+{% extends 'base.html'%} {% block title %}
+<title>Gratitude concert home</title> {% endblock%} {% block style %}
+<link rel="stylesheet" href="{{url_for('static', filename = './register.css')}}"> {% endblock %} {% block content%}
+<section>
+
+    <div class="contain">
+        <form action="" method="POST">
+            {{form.hidden_tag()}}
+            <div class="auth-div">
+                {{form.name.label(class = "field-label")}} {% if form.name.errors%} {{form.name(class = "field error")}}
+                <div class="errors">
+                    {% for error in form.name.errors %}
+                    <span>{{error}}</span> {% endfor %}
+                </div>
+                {%else%} {{form.name(class="field", id ="field")}} {% endif %}
+
+            </div>
+            <div class="auth-div">
+                {{form.sex.label(class = "field-label")}} {% if form.sex.errors%} {{form.sex(class = "field radio error")}}
+                <div class="errors">
+                    {% for error in form.sex.errors %}
+                    <span>{{error}}</span> {% endfor %}
+                </div>
+                {%else%} {{form.sex(class="field radio", id ="field")}} {% endif %}
+
+            </div>
+            <div class="auth-div">
+                {{form.status.label(class = "field-label")}} {% if form.status.errors%} {{form.status(class = "field error")}}
+                <div class="errors">
+                    {% for error in form.status.errors %}
+                    <span>{{error}}</span> {% endfor %}
+                </div>
+                {%else%} {{form.status(class="field", id ="field")}} {% endif %}
+
+            </div>
+            <div class="auth-div">
+                {{form.phone_no.label(class = "field-label")}} {% if form.phone_no.errors%} {{form.phone_no(class = "field error")}}
+                <div class="errors">
+                    {% for error in form.phone_no.errors %}
+                    <span>{{error}}</span> {% endfor %}
+                </div>
+                {%else%} {{form.phone_no(class="field", id ="field")}} {% endif %}
+
+            </div>
+            <div class="auth-div">
+                {{form.day.label(class = "field-label")}} {% if form.day.errors%} {{form.day(class = "field error")}}
+                <div class="errors">
+                    {% for error in form.day.errors %}
+                    <span>{{error}}</span> {% endfor %}
+                </div>
+                {%else%} {{form.day(class="field", id ="field")}} {% endif %}
+
+            </div>
+            <div class="auth-div">
+                {{form.seat_no.label(class = "field-label spec")}} {% if form.seat_no.errors%} {{form.seat_no(class = "field error")}}
+                <div class="errors">
+                    {% for error in form.seat_no.errors %}
+                    <span>{{error}}</span> {% endfor %}
+                </div>
+                {%else%} {{form.seat_no(class="field", id ="field")}} {% endif %}
+
+            </div>
+            <div class="submit">
+                {{form.submit(class="btn")}}
+            </div>
+        </form>
+    </div>
+
+</section>
+{% endblock %}
